@@ -81,7 +81,7 @@ function ExNotification( objOfSpecs ) {
 		}
 		else if( this.position == "right" ){
 
-			$_ex( self.elem ).css({ 'top': ( INITIAL_POSITION + self.counter * 2) + '%', 'right': '-20%' }).animate({
+			$_ex( self.elem ).css({ 'top': ( INITIAL_POSITION + self.counter * 2) + '%', 'right': '-25%' }).animate({
 					 'right' : '25px',
 					 'top' : ( INITIAL_POSITION + self.counter * 2) + '%'
 			}, 1000 , function( ){
@@ -187,7 +187,7 @@ var getDependecies = function( callback ){
 var ExNotificationArray = {
 	self : this,
 	array : [],
-	
+
 
 	_addElement : function( element ){
 		this.array.push( element )
