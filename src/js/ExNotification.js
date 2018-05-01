@@ -11,35 +11,35 @@ function ExNotification( objOfSpecs ) {
 
 	this.type = objOfSpecs.type || "success"
 	this.title = objOfSpecs.title || "Insert Text"
-	this.description = objOfSpecs.description || "Insert description"
 	this.position = objOfSpecs.position || "top"
 	this.imageUrl = objOfSpecs.imageUrl || null
-
+	this.description = objOfSpecs.description
 	this.counter = counterEx;
 
 	this.id = "exn" + this.counter
-	//this.image
 
 	/////////////////////// INIT ///////////////////////
 
 	this._getModel = function(){
 
+		this.descriptionSmall = this.makeShortDescription()
+
 		var img = ""
-		var bodyStyle = ""
+		var exnClass = ""
 		if( this.imageUrl != null ){
 			img = "<img class='divExnImg' src='"+this.imageUrl+"'>"
-			bodyStyle = "style='width: calc(100% - 60px)'"
+			exnClass = "exn-image"
 		}
 
-		var model = "<div id='"+this.id+"' class='exn exn-"+this.type+" exn-"+this.position+"'>"+
+		var model = "<div id='"+this.id+"' class='exn "+exnClass+" exn-"+this.type+" exn-"+this.position+"'>"+
 									"<div class='top-bar'>"+
 										"<div class='closeIcon'><i class='fas fa-times'></i></div>"+
 									"</div>"+
 									"<div class='body'>"+
 										img+
-										"<div class='body-text' "+bodyStyle+">"+
+										"<div class='body-text'>"+
 											"<div class='titleText'>"+this.title+"</div>"+
-											"<div class='descriptionText'>"+this.description+"</div>"+
+											"<div class='descriptionText'>"+this.descriptionSmall+"</div>"+
 										"</div>"+
 									"</div>"+
 								"</div>"
@@ -64,29 +64,16 @@ function ExNotification( objOfSpecs ) {
 
 		if( this.position == "top" ){
 
-			$_ex( self.elem ).css({ 'top': '', 'bottom': '-10%' }).animate({
-					 'top' : ( INITIAL_POSITION + self.counter ) + '%'
-			}, 1000 , function( ){
-
-				$_ex( self.elem ).animate({
-						 'top' : ( INITIAL_POSITION + ( self.counter * 2) ) + '%'
-				}, 200 , function( ){
-
-					self._afterAnimation()
-
-				});
-
-			});
+			exAnim._showTop( this , function(){
+				self._afterAnimation()
+			})
 
 		}
 		else if( this.position == "right" ){
 
-			$_ex( self.elem ).css({ 'top': ( INITIAL_POSITION + self.counter * 2) + '%', 'right': '-25%' }).animate({
-					 'right' : '25px',
-					 'top' : ( INITIAL_POSITION + self.counter * 2) + '%'
-			}, 1000 , function( ){
-
-			});
+			exAnim._showRight( this , function(){
+				self._afterAnimation()
+			})
 
 		}
 
@@ -100,6 +87,19 @@ function ExNotification( objOfSpecs ) {
 	}
 
 	/////////////////////// FUNCTIONS ///////////////////////
+
+	this.makeShortDescription = function(){
+		var text = this.description
+		const LIMIT = this.imageUrl == null ? 100 : 50
+
+		if( text == null )
+			return "Insert description"
+
+		if( text.length > LIMIT )
+			text = text.substring( 0,LIMIT ) + "..."
+
+		return text
+	}
 
 	this._hover = function(){
 
@@ -118,11 +118,9 @@ function ExNotification( objOfSpecs ) {
 
 		$_ex( document ).on( 'click', '#' + this.id + ">.top-bar>.closeIcon>i", function(){
 
-			$_ex( self.elem ).animate({
-					 'opacity' : 0,
-			}, 400 , function( ){
+			exAnim._close( self , function(){
 				self._deleteElement()
-			});
+			})
 
 		})
 
@@ -178,7 +176,6 @@ var getDependecies = function( callback ){
 
 
 }
-
 
 
 /////////////////////// ARRAY ///////////////////////

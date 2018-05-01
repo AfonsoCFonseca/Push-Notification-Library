@@ -4,9 +4,9 @@ window.onload = function() {
 
 		getDependecies( function(){
 
-			$( "#top" ).click( function(){
+			$( "#top-default" ).click( function(){
 				new ExNotification( {
-					type : getRandomState(),
+					type : "default",
 					title  : getRandTitle(),
 					description  : getRandomText(),
 					position : "top",
@@ -14,9 +14,47 @@ window.onload = function() {
 				})
 			})
 
-			$( "#right" ).click( function(){
+			$( "#right-default" ).click( function(){
 				new ExNotification( {
-					type : getRandomState(),
+					type : "default",
+					title  : getRandTitle(),
+					description  : getRandomText(),
+					position : "right",
+				})
+			})
+
+			$( "#top-success" ).click( function(){
+				new ExNotification( {
+					type : "success",
+					title  : getRandTitle(),
+					description  : getRandomText(),
+					position : "top",
+					imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
+				})
+			})
+
+			$( "#right-success" ).click( function(){
+				new ExNotification( {
+					type : "success",
+					title  : getRandTitle(),
+					description  : getRandomText(),
+					position : "right",
+				})
+			})
+
+			$( "#top-error" ).click( function(){
+				new ExNotification( {
+					type : "error",
+					title  : getRandTitle(),
+					description  : getRandomText(),
+					position : "top",
+					imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
+				})
+			})
+
+			$( "#right-error" ).click( function(){
+				new ExNotification( {
+					type : "error",
 					title  : getRandTitle(),
 					description  : getRandomText(),
 					position : "right",
@@ -27,9 +65,10 @@ window.onload = function() {
 
 				new ExNotification( {
 					type : getRandomState(),
-					title  : getRandTitle(),
-					description  : getRandomText(),
+					title  : "canção teste",
+					description  : "dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d",
 					position : "top",
+					imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
 				})
 
 			}, 500 )
@@ -46,6 +85,7 @@ function getRandTitle(){
 		"New Notification!",
 		"Hey, you just received a message!",
 		"Alert!New message!",
+		"Hey, you just received a message!",
 	]
 
 	return mArr[ Math.floor((Math.random() * mArr.length) ) ]
@@ -56,9 +96,10 @@ function getRandomState(){
 	var mArr = [
 		"error",
 		"success",
+		"default",
 	]
 
-	return mArr[ Math.floor((Math.random() * 2) ) ]
+	return mArr[ Math.floor((Math.random() * mArr.length) ) ]
 }
 
 function getRandomText(){
@@ -67,6 +108,7 @@ function getRandomText(){
 		"You got new emails!",
 		"Check your profile for more info",
 		"Someone just sent a new message",
+		"dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d"
 	]
 
 	return mArr2[ Math.floor((Math.random() * mArr2.length) ) ]

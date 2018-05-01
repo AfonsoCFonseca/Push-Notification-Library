@@ -1,13 +1,29 @@
 <html>
 <head>
+	<meta charset="utf-8">
 	<link href="./src/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-<button id='top'> TOP </button>
-<button id='right'> RIGHT </button>
+
+
+<div style='float:right;margin-right:300px; width:200px;background-color:#e1e1e1; padding: 0 40px 40px 40px;'>
+
+	<p style='margin-bottom:5px; color:#bebebe' >default</p>
+	<button style='width:100%' id='top-default'> TOP </button>
+	<button style='width:100%' id='right-default'> RIGHT </button>
+
+	<p style='margin-bottom:5px; color:#bebebe' >success</p>
+	<button style='width:100%;' id='top-success'> TOP </button>
+	<button style='width:100%' id='right-success'> RIGHT </button>
+
+	<p style='margin-bottom:5px; color:#bebebe' >error</p>
+	<button style='width:100%;' id='top-error'> TOP </button>
+	<button style='width:100%' id='right-error'> RIGHT </button>
+</div>
 
 <script src='index.js' ></script>
+<script src='./src/js/exAnim.js' ></script>
 <script src='./src/js/ExNotification.js' ></script>
 </body>
 
