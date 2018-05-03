@@ -10,7 +10,6 @@ window.onload = function() {
 					title  : getRandTitle(),
 					description  : getRandomText(),
 					position : "top",
-					imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
 				})
 			})
 
@@ -29,7 +28,6 @@ window.onload = function() {
 					title  : getRandTitle(),
 					description  : getRandomText(),
 					position : "top",
-					imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
 				})
 			})
 
@@ -48,7 +46,6 @@ window.onload = function() {
 					title  : getRandTitle(),
 					description  : getRandomText(),
 					position : "top",
-					imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
 				})
 			})
 
@@ -61,17 +58,18 @@ window.onload = function() {
 				})
 			})
 
-			setTimeout(function(){
-
-				new ExNotification( {
-					type : getRandomState(),
-					title  : "canção teste",
-					description  : "dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d",
-					position : "top",
-					imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
-				})
-
-			}, 500 )
+			// setTimeout(function(){
+			//
+			// 	new ExNotification( {
+			// 		type : getRandomState(),
+			// 		title  : "canção teste",
+			// 		description  : "dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d",
+			// 		position : "top",
+			// 		imageUrl : "http://www.wonko.info/ipt/xfiles/interfaces/target.bmp",
+			// 		timer : 2000,
+			// 	})
+			//
+			// }, 500 )
 
 		})
 
@@ -108,7 +106,7 @@ function getRandomText(){
 		"You got new emails!",
 		"Check your profile for more info",
 		"Someone just sent a new message",
-		"dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d"
+		// "dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d dqw dqw dqw d qwd qw dqwdksjadnqw kjd qwkjd qwkjd qwkdj qwkjd qwjkqwkd qwd qw dqw d qw d"
 	]
 
 	return mArr2[ Math.floor((Math.random() * mArr2.length) ) ]

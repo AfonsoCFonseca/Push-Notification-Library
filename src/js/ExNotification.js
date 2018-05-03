@@ -15,6 +15,7 @@ function ExNotification( objOfSpecs ) {
 	this.imageUrl = objOfSpecs.imageUrl || null
 	this.description = objOfSpecs.description
 	this.counter = counterEx;
+	this.timer = objOfSpecs.timer || null
 
 	this.id = "exn" + this.counter
 
@@ -26,6 +27,8 @@ function ExNotification( objOfSpecs ) {
 
 		var img = ""
 		var exnClass = ""
+		var closeIcon = this.timer == null ? "<div class='closeIcon'><i class='fas fa-times'></i></div>" : ""
+
 		if( this.imageUrl != null ){
 			img = "<img class='divExnImg' src='"+this.imageUrl+"'>"
 			exnClass = "exn-image"
@@ -33,7 +36,7 @@ function ExNotification( objOfSpecs ) {
 
 		var model = "<div id='"+this.id+"' class='exn "+exnClass+" exn-"+this.type+" exn-"+this.position+"'>"+
 									"<div class='top-bar'>"+
-										"<div class='closeIcon'><i class='fas fa-times'></i></div>"+
+										closeIcon+
 									"</div>"+
 									"<div class='body'>"+
 										img+
@@ -115,6 +118,16 @@ function ExNotification( objOfSpecs ) {
 	}
 
 	this._close = function(){
+
+		if( this.timer != null ){
+			setTimeout( function(){
+
+				exAnim._close( self , function(){
+					self._deleteElement()
+				})
+
+			}, self.timer )
+		}
 
 		$_ex( document ).on( 'click', '#' + this.id + ">.top-bar>.closeIcon>i", function(){
 

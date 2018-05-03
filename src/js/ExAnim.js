@@ -9,7 +9,7 @@ var exAnim = {
 		var IP = this.INIT_POSITION
 		var IS2 = this.INIT_SPEED_2
 
-		$( exn.elem ).css({ 'top': '', 'bottom': '-10%' }).animate({
+		$( exn.elem ).css({ 'bottom': '0%' }).animate({
 				 'top' : ( this.INIT_POSITION + exn.counter ) + '%'
 		}, this.INIT_SPEED_1 , function( ){
 
@@ -27,7 +27,7 @@ var exAnim = {
 
 	_showRight : function( exn, callback ){
 
-		$( exn.elem ).css({ 'top': ( this.INIT_POSITION + exn.counter * 2) + '%', 'right': '-25%' }).animate({
+		$( exn.elem ).css({ 'top': ( this.INIT_POSITION + exn.counter * 2) + '%', 'right' : '-20%' }).animate({
 				 'right' : '25px',
 				 'top' : ( this.INIT_POSITION + exn.counter * 2) + '%'
 		}, this.INIT_SPEED_1 , function( ){
