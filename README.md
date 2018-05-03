@@ -6,7 +6,7 @@
 
 <p>Notifications Type</p>
 <label>Top Animation</label>
-![alt text](https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/ezgif-1-fae5e3b76c.gif?raw=true)
+![alt text](https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/ezgif-1-fae5e3b76c.gif)
 
 
 Javascript
