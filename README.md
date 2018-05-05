@@ -19,7 +19,6 @@ Css
 # Preview Types
 
 Success Notification ( top animation )
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successNormal.gif'>
 ```js
 new ExNotification( {
 		type : "success",
@@ -28,9 +27,9 @@ new ExNotification( {
 		position : "top",
 	})
 ```
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successNormal.gif'>
 
 Success Notification ( right animation )
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successNormal.gif'>
 ```js
 new ExNotification( {
 		type : "success",
@@ -39,9 +38,9 @@ new ExNotification( {
 		position : "right",
 	})
 ```
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successRight.gif'>
 
 Error Notification
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/error.gif'>
 ```js
 new ExNotification( {
 		type : "error",
@@ -50,9 +49,9 @@ new ExNotification( {
 		position : "top",
 	})
 ```
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/error.gif'>
 
 Image Notification
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successImage.gif'>
 ```js
 new ExNotification( {
 		type : "success",
@@ -62,9 +61,9 @@ new ExNotification( {
 		imageUrl : "https://image.flaticon.com/icons/png/512/149/149071.png",
 	})
 ```
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successImage.gif'>
 
 Timer Notification ( 1 second )
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successTimer.gif'>
 ```js
 new ExNotification( {
 		type : "success",
@@ -74,3 +73,4 @@ new ExNotification( {
 		timer : 1000,
 	})
 ```
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successTimer.gif'>
