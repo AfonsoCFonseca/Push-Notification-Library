@@ -1,8 +1,8 @@
-.exn{position:absolute;right:25px;bottom:15px;width:250px;height:80px;padding:10px;box-sizing:border-box;border-radius:2px;opacity:50%}
+.exn{position:absolute;bottom:15px;right:15px;width:250px;height:80px;padding:10px;box-sizing:border-box;border-radius:2px;opacity:50%;-webkit-box-shadow:-12px 9px 42px -19px rgba(0,0,0,0.75);-moz-box-shadow:-12px 9px 42px -19px rgba(0,0,0,0.75);box-shadow:-12px 9px 42px -19px rgba(0,0,0,0.75)}
 .exn>.top-bar{width:100%;height:25%;position:absolute;top:0;left:0}.exn>.body{display:inline-block}
 .exn>.body>.divExnImg{vertical-align:top;display:inline-block;max-width:50px;max-height:50px;margin-right:5px}
-.exn>.body>.body-text{display:inline-block}.exn>.body>.body-text>.titleText{font-size:14px;color:white;margin:0 0 5px 0;font-weight:600;letter-spacing:1px}
-.exn>.body>.body-text>.descriptionText{font-size:12px;color:white;font-weight:300}
+.exn>.body>.body-text{display:inline-block}.exn>.body>.body-text>.titleText{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;color:white;margin:0 0 5px 0;font-weight:600;letter-spacing:1px}
+.exn>.body>.body-text>.descriptionText{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;color:white;font-weight:300}
 .exn>.top-bar>.closeIcon{color:white;float:right;margin-right:5px;margin-top:5px}
 .exn-image{padding:8px 10px 10px 10px}.exn-image>.body>.body-text{width:calc(100% - 60px)}
 .exn-default{background-color:#e1e1e1;border:2px solid #c5c5c5;color:black}.exn-default>.body>.body-text>.titleText{color:#959595}
