@@ -1,13 +1,11 @@
 ### ExNotifications
 
 # Introduction
+Javascript Notification Library
 
 # Implementation
-
-<p>Notifications Type</p>
-<label>Top Animation</label>
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/ezgif-1-fae5e3b76c.gif'>
-
+ - Put the files exn.min.js and exn.min.css on your project
+ - Insert the two lines below on your html with the correct path
 
 Javascript
 ```js
@@ -18,59 +16,61 @@ Css
 <link href="/dist/css/exn.min.css" rel="stylesheet">
 ```
 
+# Preview Types
+
 Success Notification ( top animation )
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successNormal.gif'>
 ```js
 new ExNotification( {
-					type : "success",
-					title  : getRandTitle(),
-					description  : getRandomText(),
-					position : "top",
-				})
+		type : "success",
+		title  : getRandTitle(),
+		description  : getRandomText(),
+		position : "top",
+	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successNormal.gif'>
 
 Success Notification ( right animation )
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successNormal.gif'>
 ```js
 new ExNotification( {
-					type : "success",
-					title  : getRandTitle(),
-					description  : getRandomText(),
-					position : "right",
-				})
+		type : "success",
+		title  : getRandTitle(),
+		description  : getRandomText(),
+		position : "right",
+	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successNormal.gif'>
 
 Error Notification
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/error.gif'>
 ```js
 new ExNotification( {
-					type : "error",
-					title  : getRandTitle(),
-					description  : getRandomText(),
-					position : "top",
-				})
+		type : "error",
+		title  : getRandTitle(),
+		description  : getRandomText(),
+		position : "top",
+	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/error.gif'>
 
 Image Notification
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successImage.gif'>
 ```js
 new ExNotification( {
-					type : "success",
-					title  : getRandTitle(),
-					description  : getRandomText(),
-					position : "top",
-					imageUrl : "https://image.flaticon.com/icons/png/512/149/149071.png",
-				})
+		type : "success",
+		title  : getRandTitle(),
+		description  : getRandomText(),
+		position : "top",
+		imageUrl : "https://image.flaticon.com/icons/png/512/149/149071.png",
+	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successImage.gif'>
 
 Timer Notification ( 1 second )
+<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successTimer.gif'>
 ```js
 new ExNotification( {
-					type : "success",
-					title  : getRandTitle(),
-					description  : getRandomText(),
-					position : "top",
-					timer : 1000,
-				})
+		type : "success",
+		title  : getRandTitle(),
+		description  : getRandomText(),
+		position : "top",
+		timer : 1000,
+	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successTimer.gif'>
