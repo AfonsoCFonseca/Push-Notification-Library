@@ -213,6 +213,7 @@ var ExNotificationArray = {
 			if( this.array[i] != null ) return
 
 		this.array = []
+		counterEx = 0;
 	},
 
 	_getElement : function( element ){

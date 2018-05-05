@@ -11,6 +11,10 @@
 
 	border-radius: 2px;
 	opacity: 50%;
+
+	-webkit-box-shadow: -12px 9px 42px -19px rgba(0,0,0,0.75);
+	-moz-box-shadow: -12px 9px 42px -19px rgba(0,0,0,0.75);
+	box-shadow: -12px 9px 42px -19px rgba(0,0,0,0.75);
 }
 
 .exn>.top-bar{
@@ -38,6 +42,7 @@
 }
 
 .exn>.body>.body-text>.titleText {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: white;
 	margin: 0 0 5px 0;
@@ -46,6 +51,7 @@
 }
 
 .exn>.body>.body-text>.descriptionText {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	color: white;
 	font-weight: 300;

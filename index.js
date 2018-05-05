@@ -28,6 +28,7 @@ window.onload = function() {
 					title  : getRandTitle(),
 					description  : getRandomText(),
 					position : "top",
+					timer : 1000,
 				})
 			})
 
