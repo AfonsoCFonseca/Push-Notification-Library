@@ -38,7 +38,7 @@ new ExNotification( {
 		position : "right",
 	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successRight.gif'>
+<img src='https://github.com/AfonsoCFonseca/Push-Notification-Library/blob/master/gifs/successRight.gif'>
 
 Error Notification
 ```js
@@ -49,7 +49,7 @@ new ExNotification( {
 		position : "top",
 	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/error.gif'>
+<img src='https://github.com/AfonsoCFonseca/Push-Notification-Library/blob/master/gifs/error.gif'>
 
 Image Notification
 ```js
@@ -61,7 +61,7 @@ new ExNotification( {
 		imageUrl : "https://image.flaticon.com/icons/png/512/149/149071.png",
 	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successImage.gif'>
+<img src='https://github.com/AfonsoCFonseca/Push-Notification-Library/blob/master/gifs/successImage.gif'>
 
 Timer Notification ( 1 second )
 ```js
@@ -73,4 +73,4 @@ new ExNotification( {
 		timer : 1000,
 	})
 ```
-<img src='https://github.com/afonsofcfonseca/ExNotifications/blob/master/gifs/successTimer.gif'>
+<img src='https://github.com/AfonsoCFonseca/Push-Notification-Library/blob/master/gifs/successTimer.gif'>
